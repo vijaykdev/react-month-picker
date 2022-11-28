@@ -15,7 +15,7 @@ const Selector = ({
   useEffect(() => {
     let ys = [];
 
-    for (let year = 2010; year <= Number(moment().format("YYYY")); year++) {
+    for (let year = 1998; year <= Number(moment().format("YYYY")); year++) {
       const months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map(month => {
         let date = moment(year + "-" + month + "-01 00:00:00").toDate();
         return {
